@@ -52,7 +52,7 @@ gulp.task('sass', function () {
 
 gulp.task('js', ['babel'], function () {
     return gulp.src([
-            'app/libs/jquery/dist/jquery.min.js',
+            'app/libs/jquery/jquery.min.js',
             'app/js/es5/common_es5.js', // Always at the end
         ])
         .pipe(concat('scripts.min.js'))
